@@ -1,0 +1,246 @@
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+/* .nav-link.active {
+  background-color: rgb(204, 202, 221);
+  border-radius: 1vw;
+  margin: 0.5vw;
+  border: 0.1vw solid black;
+} */
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: stretch;
+  gap: 20px;
+  padding: 10px;
+}
+.nav-item {
+  display: grid;
+  flex-direction: column;
+  place-items: center;
+  padding: 10px;
+  background-color: rgb(92, 89, 83);
+  box-shadow: 5px 5px 5px white;
+  place-content: center;
+}
+.nav-item a {
+  text-decoration: none;
+}
+.projects-thumbnail {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.projects-thumbnail img {
+  border: 2px solid rgb(1, 1, 1);
+  width: 300px;
+  height: 190px;
+  margin: 10px 5px;
+}
+
+.slide-project,
+.detail-project {
+  margin-left: 20px;
+  border: 2px solid black;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-information h4 {
+  font-size: 25px;
+}
+
+.project-information p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.button {
+  margin-top: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.button a {
+  background-color: rgb(48, 16, 191);
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.paginator {
+  display: flex;
+  justify-content: center;
+}
+
+.leftPaginator,
+.Page,
+.RightPaginator {
+  margin: 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.contain-project {
+  display: grid;
+  grid-template-columns: 3fr 1.2fr;
+}
+.backButton .bx {
+  font-size: 30px;
+  color: blue;
+  margin: 10px 10px;
+}
+
+.report {
+  color: white;
+}
+.report ol {
+  padding-left: 60px;
+}
+.report ol li {
+  color: blue;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.report ol ul img {
+  width: 500px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+ul.insight_items li {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 0.3vw;
+  font-weight: lighter;
+  margin-left: 20px;
+}
+
+.report i {
+  float: right;
+  font-size: 3vw;
+  margin-right: 2vw;
+  color: rgb(255, 255, 255);
+}
+
+.icon-report {
+  display: inline-block;
+  width: 100%;
+}
+
+.linkProject {
+  margin-left: 30px;
+}
+.linkProject a {
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.code p {
+  border: 5px solid black;
+  background-color: azure;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.result li {
+  color: black;
+  font-size: 13px;
+}
+.resultHead {
+  margin-left: 10px;
+}
+.codeResult {
+  border: 2px solid black;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+.purpose li {
+  color: black;
+  font-weight: lighter;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 996px) {
+  .nav {
+    gap: 10px;
+    padding: 0;
+  }
+
+  .nav-item a {
+    font-size: 0.7em;
+  }
+
+  .projects-thumbnail img {
+    border: 2px solid rgb(255, 255, 255);
+    width: 170px;
+    height: 100px;
+  }
+
+  .leftPaginator,
+  .Page,
+  .RightPaginator {
+    margin: 1vw;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  .report ol ul img {
+    width: 250px;
+    height: 125px;
+    margin-bottom: 15px;
+  }
+
+  .linkProject a {
+    font-size: 14px;
+  }
+
+  .contain-project {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .project-information h4 {
+    font-size: 16px;
+  }
+
+  .project-information p {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+
+  .report {
+    width: 70%;
+  }
+
+  .icon-report i {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contain-isi {
+    width: 100%;
+  }
+
+  .report {
+    width: 60%;
+  }
+  .nav-item a {
+    font-size: 0.6em;
+  }
+}
