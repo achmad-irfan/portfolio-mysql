@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-8+g+l0$v-of3hku+shwj+st!eoe_&9^9wu+9!1i5nwjbl3&at8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.achmad-irfan.cloud','achmad-irfan.cloud']
 
 
 # Application definition
@@ -86,9 +86,9 @@ WSGI_APPLICATION = "MYPORTFOLIO.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myportfolio',
-        'USER': 'root',
-        'PASSWORD': 'dave',
+        'NAME': 'achmadir_portfolio-mysql',
+        'USER': 'achmadir_fan-afandi ',
+        'PASSWORD': 'HYt25wvMJiw!',
         'HOST': 'localhost',
         'PORT': '3306',
     }
